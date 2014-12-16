@@ -1,0 +1,16 @@
+﻿@model IList<DenManager.DAL.Product>
+
+@{
+    ViewBag.Title = "Beers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Beers</h2>
+
+@{
+    foreach (var product in Model)
+    {
+        <p>@product.Name KOSZTUJE @product.Price ZŁotych </p>
+    }
+}
+
