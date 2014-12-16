@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
 
 namespace DenManager.DAL
 {
-    public class Cigarettes: Product
+    public class Vodka: Product
     {
-        public string Type { get; set; }
+        public decimal Size { get; set; }
     }
 }

@@ -14,8 +14,9 @@ namespace DenManager.DAL
         }
 
         public DbSet<Product> Products { get; set; }
-
+        public DbSet<Beer> Beers { get; set; }
+        public DbSet<Cigarettes> Cigarettes{ get; set; }
+        public DbSet<Vodka> Vodkas { get; set; }
+        public DbSet<Debtor> Debters { get; set; }
     }
-
-    
 }

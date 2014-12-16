@@ -11,8 +11,25 @@ namespace DenManager.DAL
         protected override void Seed(ProductsContext context)
         {
             base.Seed(context);
-            context.Products.Add(new Product((decimal)3.5, string.Empty, "Tyskie"));
-            
+            context.Beers.Add(new Beer
+                                 {
+                                     Bottle = (decimal)0.35,
+                                     Name = "Tyskie",
+                                     Price = (decimal)3,
+                                 });
+            context.Cigarettes.Add(new Cigarettes
+            {
+                Type = "Light",
+                Name = "LM",
+                Price = (decimal)13,
+            });
+
+            context.Debters.Add(new Debtor
+                                {
+                                    Debt = 200,
+                                    Name = "WACO"
+                                });
+
         }
     }
 }

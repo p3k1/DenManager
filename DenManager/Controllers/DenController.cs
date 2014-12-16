@@ -20,7 +20,26 @@ namespace DenManager.Controllers
         [Authorize]
         public ActionResult Beers()
         {
+            return View(context.Beers.ToList());
+        }
+
+        [Authorize]
+        public ActionResult Vodka()
+        {
             return View(context.Products.ToList());
         }
+
+        [Authorize]
+        public ActionResult Cigarettes()
+        {
+            return View(context.Cigarettes.ToList());
+        }
+
+        [Authorize]
+        public ActionResult Debtors()
+        {
+            return View(context.Debters.ToList());
+        }
     }
+
 }

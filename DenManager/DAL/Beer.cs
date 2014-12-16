@@ -6,7 +6,7 @@ using System.Web;
 
 namespace DenManager.DAL
 {
-    public class Beer
+    public class Beer: Product
     {
         [Range(0.0, 25.0)]
         public decimal Bottle { get; set; }
